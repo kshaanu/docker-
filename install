@@ -5,3 +5,32 @@ sudo usermod -aG docker <username>
  
  for root less 
  curl -sSL https://get.docker.com/rootless | sh
+shell scripts
+-------
+fruits=('apple','mango','banana')
+read -p "enter the fruit =" name
+fruits=("${fruits[@]}" "$name")
+echo "${fruits[*]}"
+--------
+f1()
+{
+ echo "`ls -la`="f1
+}
+f2()
+ {
+  echo "`ps -a`="f2
+}
+result "enter your option=\
+1.files
+2.process"
+
+result "${result[@]}"
+case files)
+select
+    f1
+     echo "all files are"$f1;;
+    process
+    f2
+     echo "all running process"$f2;;
+     echo "invalid input";;
+esac
