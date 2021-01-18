@@ -1,7 +1,7 @@
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 
-sudo usermod -aG docker <username>
+sudo usermod -aG docker ubuntu
  
  for root less 
  curl -sSL https://get.docker.com/rootless | sh
